@@ -25,8 +25,8 @@ import java.util.List;
  */
 public class ClienteHttp {
 
-    //public static final String URL = "http://206.225.83.102/mobile_trigger/getAlerts.php";
-    public static final String URL = "http://66.226.72.48/mobile_trigger/getAlerts.php";
+
+    public static final String URL = "Insertar URL Aqui";
     private static final String DATEF = "yyyy-MM-dd HH:mm:ss";
     private static Gson gson = new GsonBuilder().setDateFormat(DATEF).create();
 
