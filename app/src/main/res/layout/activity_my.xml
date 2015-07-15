@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:hint="$0.00"
+        android:id="@+id/editMinValue"
+        android:layout_toLeftOf="@+id/checkBox"
+        android:layout_alignTop="@+id/checkBox2"
+        android:layout_alignLeft="@+id/switch1"
+        android:layout_alignStart="@+id/switch1" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:hint="$0.00"
+        android:id="@+id/editMaxValue"
+        android:layout_alignBottom="@+id/checkBox2"
+        android:layout_alignRight="@+id/textView4"
+        android:layout_alignEnd="@+id/textView4" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:gravity="center"
+        android:id="@+id/RefreshButton"
+        android:textColor="@android:color/white"
+        android:background="@color/registro"
+        android:layout_marginTop="39dp"
+        android:layout_below="@+id/switch1"
+        android:layout_centerHorizontal="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Divisa1"
+        android:entries="@array/countryfrom_arrays"
+        android:layout_toEndOf="@+id/checkBox"
+        android:layout_above="@+id/textView2"
+        android:layout_toRightOf="@+id/checkBox"
+        android:layout_marginBottom="32dp"
+        android:layout_toLeftOf="@+id/checkBox2"
+        android:layout_toStartOf="@+id/checkBox2" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Divisar2"
+        android:entries="@array/country_arrays"
+        android:layout_toLeftOf="@+id/RefreshButton"
+        android:layout_alignTop="@+id/Divisa1"
+        android:layout_alignLeft="@+id/editMaxValue"
+        android:layout_alignStart="@+id/editMaxValue"
+        android:layout_alignRight="@+id/textView4"
+        android:layout_alignEnd="@+id/textView4" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notificaciones"
+        android:id="@+id/switch1"
+
+        android:layout_below="@+id/editMinValue"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/checkBox"
+
+        android:layout_alignBottom="@+id/editMaxValue"
+        android:layout_toLeftOf="@+id/switch1"
+        android:layout_toStartOf="@+id/switch1" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox2"
+        android:layout_toRightOf="@id/editMinValue"
+        android:layout_toLeftOf="@+id/Divisar2"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/RefreshButton"
+        android:layout_alignEnd="@+id/RefreshButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Minimo"
+        android:id="@+id/textView2"
+        android:layout_toLeftOf="@+id/checkBox"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignLeft="@+id/editMinValue"
+        android:layout_alignStart="@+id/editMinValue" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Maximo"
+        android:id="@+id/textView3"
+        android:layout_above="@+id/editMaxValue"
+        android:layout_alignRight="@+id/switch1"
+        android:layout_alignEnd="@+id/switch1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Establecer Alertas"
+        android:id="@+id/textView4"
+        android:layout_marginTop="28dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Cancelar"
+        android:textColor="@android:color/white"
+        android:background="@color/registro"
+        android:id="@+id/Cancelbutton"
+        android:layout_below="@+id/RefreshButton"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

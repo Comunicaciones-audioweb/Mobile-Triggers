@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Mobile Triggers</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="country_arrays">
+        <item>MXN</item>
+        <item>USD</item>
+        <item>EUR</item>
+        <item>JPY</item>
+        <item>GBP</item>
+        <item>CHF</item>
+    </string-array>
+    <string-array name="countryfrom_arrays">
+        <item>MXN</item>
+        <item>USD</item>
+    </string-array>
+
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_menu">Menu</string>
+    <string name="title_activity_my_divisas">MyDivisas</string>
+
+</resources>
